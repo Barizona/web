@@ -1,0 +1,309 @@
+/*
+
+Pale Gold: #A48861
+LightDark: #333
+White: #fff
+Lighty Grey: #e4e4e4
+
+*/
+
+/* General */
+
+@import url(http://fonts.googleapis.com/css?family=Abel|Noto+Sans|Arimo);
+
+body{
+    -webkit-font-smoothing: antialiased !important;
+}
+
+#webmagico-logo{
+    height: 150px;
+}
+
+#bullet{
+    height: 15px;
+    margin: 5px;
+    margin-top: 0px;
+    display: none;
+}
+
+.title{
+    background: #333;
+    text-align: center;
+}
+
+.title div{
+    background: #A48861;
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    
+    padding: 0px 25px 0px 25px;
+}
+
+.title div h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel';
+    font-size: 38px;
+    color: white;
+    
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'Abel';
+}
+
+/* header */
+
+header{
+    background: rgb(255, 255, 255);
+    height: 105px;
+    border-bottom: 1px solid #a7a7a7;
+    box-shadow: 0px 0px 15px grey;     
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+header img{
+    display: inline-block;
+    width: 300px;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+
+nav{
+    text-align: center;
+     /*box-shadow: 0px 0px 5px #b9b9b9;*/
+    border-bottom: 1px solid lightgrey;
+    height: 71px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;   
+    margin: 0px 25px 0px 25px;
+}
+
+nav ul li a{
+    line-height: 70px;
+    font-family: 'Noto Sans';
+    font-weight: 800;
+    color: #333;
+    display: block;
+    padding: 0px 25px 0px 25px;
+    -webkit-transition: background .1s ease;
+    font-size: 18px;
+    
+}
+
+nav ul li a:hover{
+    background: #333;
+    color: white;
+    /*border-bottom: 3px solid #444;*/
+}
+
+/* Splash */
+
+.splash{
+    background: url('../img/mountains.jpg') top center;
+    height: 800px;
+    z-index: -1;
+    box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.9);
+    &:before{
+        content: '';
+        background: -webkit-linear-gradient(transparent, black); 
+    }   
+}
+
+.introduction{
+    position: static;
+    text-align: center;
+    padding-top: 300px;
+    line-height: 100px;
+}
+
+.introduction h1{
+    font-family: 'abel';
+    color: white;
+    font-size: 64px;
+    text-shadow: 0px 0px 25px black;
+}
+
+.btn_ontdek{
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 3px;
+    font-size: 19px;
+    text-shadow: 0px 0px 15px black;
+    color: white;
+    -webkit-transition: background .5 ease;
+    -moz-transition: background .5 ease;
+    transition: background .5 ease;
+}
+
+.btn_ontdek:focus{
+    color: white;
+}
+
+.btn_ontdek:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.4);
+    
+}
+
+/* Op maat */
+
+.op_maat{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.illustratie_kolom{
+    padding-top: 50px;
+}
+
+.maat_kolom div{
+    padding: 50px;
+}
+
+.maat_kolom h1{
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel';
+    font-size: 64px;
+}
+
+.maat_kolom p{
+    padding: 15px 15px 15px 0px;
+    font-family: 'Arimo';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Kwaliteiten */
+
+.kwaliteiten{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.kwaliteiten div ul li{
+    list-style: none;
+}
+
+.kwaliteiten div ul li:hover{
+    cursor: pointer;
+}
+
+.kwaliteiten div ul li:hover #bullet{
+    display: inline-block;
+}
+
+.kwaliteiten div ul{
+    padding: 0;
+    margin: 0;
+    border-top: 3px solid black;
+    font-family: 'Arimo';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+
+.kwaliteiten div h2{
+    font-family: 'Abel';
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.design_kolom{
+    text-align: left;
+}
+
+.design_kolom ul{
+    list-style: none;
+    text-align: right;
+    border-right: 1px solid black;
+    padding-right: 15px;
+}
+
+.design_kolom ul li{
+    padding-right: 15px;
+}
+
+.tech_show_kolom{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.tech_show_kolom h4{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.tech_show_kolom img{
+    height: 150px;
+}
+
+.develop_kolom{
+    text-align: right;
+}
+
+.develop_kolom ul{
+    list-style: none;
+    text-align: left;
+    border-left: 1px solid black;
+}
+
+.develop_kolom ul li{
+    padding-left: 15px;
+}
+
+/* Team */
+
+
+/* Contact */
+
+.contact{
+    width: auto;
+}
+
+.form_kolom{
+    background: #333;
+}
+
+.social_kolom{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* footer */
+
+footer{
+    background: #A48861;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+}
+
+footer h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel';
+}
+
+footer h5{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+}

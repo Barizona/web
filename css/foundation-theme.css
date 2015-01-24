@@ -1,0 +1,12 @@
+button{
+    border-radius: 3px;
+    background: #8dcc00;
+}
+
+button:hover{
+    background: #7ab101;
+}
+
+button:active, button:focus{
+    background: #73a700;
+}

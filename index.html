@@ -1,41 +1,105 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <title>HTML Layouts</title>
-    
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta name="Keywords" content="">
-    <meta name="Description" content="">    
-</head>
-<body>
-<div class="wrapper">
-    <div class="menu">
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Webmagico</title>
+        <link rel="stylesheet" href="css/vendor/normalize.css"/>
+        <link rel="stylesheet" href="css/vendor/foundation.min.css"/>
+        <link rel="stylesheet" href="css/foundation-theme.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        
+        <header>
+            <img src="img/logo_top.png"/>
+        </header>
+        <section class="splash">
+            <div class="introduction">
+               <!-- <img src="img/webmagico_logo_shadowed.svg" id="webmagico-logo"/>-->
+                <h1>Wij Bieden het Web</h1>
+                <a href="#" class="btn_ontdek">Ontdek!</a>
+            </div>
+        </section>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#Kwaliteiten">Kwaliteiten</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li> 
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="header">
-        <div class="driehoek">
-            <img id="toverstok" src="img/magic16.png"/> 
-        </div>
-    </div>
-    
-    <div class="textArea">
-        <div class="logo">
-            <h1>WEBMAGICO.BE</h1>
-            <a class="start_button" href="#start">Start</a>
-        </div>
-    </div>
-    <div class="footer">
-        <img src="img/magic3.png" alt="Magic webdesign for priceless cheap O's"  class="rotate" id="ico"></img>
-        Copyright © Webmagico.be
-    </div>
-    
-    <script src="js/libs/jquery-2.1.1.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <section class="op_maat row">
+            <div class="illustratie_kolom column large-6">
+                <img src="img/maat_illustratie.svg"/>
+            </div>
+            <div class="maat_kolom column large-6">
+                <div>
+                    <h1>Op maat <br />gemaakt...</h1>
+                    <p>
+                        Wij overleggen met u! Een promotiesite,
+                        Een simpele informatieve site? Wij passen
+                        onze vaardigheden toe aan de hand van
+                        uw noden.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="title"><div><h2>Kwaliteiten</h2></div></div>
+        <section class="kwaliteiten row">
+            <div class="design_kolom column large-4">
+                <h2>Design</h2>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>HTML &amp; CSS</li>
+                </ul>
+            </div>
+            <div class="tech_show_kolom column large-4">
+                <h4>Info</h4>
+                <img src="img/tech/rails.png"/>
+                <br /><br />
+                <h3>Ruby On Rails</h3>
+                <p>Dit is een server-side framework. Met deze technologie kunnen we de beste service aan een grote snelheid leveren.</p>
+            </div>
+            <div class="develop_kolom column large-4">
+                <h2>Ontwikkeling</h2>
+                <ul>
+                    <li id="1">Ruby on Rails</li>
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </section>
+        <div class="title"><div><h2>Team</h2></div></div>
+        <section class="teams row">
+            
+        </section>
+        <div class="title"><div><h2>Contact</h2></div></div>
+        <section class="contact">
+            <div class="form_kolom column large-6">
+                <form>
+                    Naam:<br />
+                    <input type="text"/><br />
+                    E-mail:<br />
+                    <input type="email"/><br />
+                    Bericht:<br />  
+                    <textarea></textarea><br />
+                    <input type="submit" value="Verzend!"/>
+                </form>
+            </div>
+            <div class="social_kolom column large-6">
+                <img src="img/network.png"/>
+            </div>
+        </section>
+        <footer>
+            <img src="img/logo_bottom.png"/>
+            <h1>WEBMAGICO</h1>
+            <h5>All rights reserved, 2015</h5>
+        </footer>
+        
+        <script src="js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
 </html>

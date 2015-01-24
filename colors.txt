@@ -1,0 +1,4 @@
+Pale Gold: #A48861
+LightDark: #333
+White: #fff
+Lighty Grey: #e4e4e4

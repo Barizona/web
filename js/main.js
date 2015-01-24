@@ -1,28 +1,41 @@
-var main = function(){
-    
-    $(".wrapper").css({height: "" + $(window).height() + "px"});
-    /*$(".textArea").css({height: "" + $(window).height() / 4 + "px"});*/
-    
-    menu();
+
+
+
+
+var technologies = {
+    {
+        img: "img/tech/rails.png",
+        title: "Ruby On Rails",
+        text: "Dit is een server-side framework. Met deze technologie kunnen we de beste service aan een grote snelheid leveren."
+    }
 }
 
-var menu = function(){
+
+var Q_bullet = function(){
+    $('.develop_kolom ul li').append('<img src="../img/bullet.svg" id="bullet"/>');
     
-    open = false;
+    $('.design_kolom ul li').prepend('<img src="../img/bullet.svg" id="bullet"/>');
+}
+
+var show_tech_info = function(){
+    $('.kwaliteiten div ul li').click(function(){
     
-    $('#toverstok').click(function(){
-        if(open){
-            $('.menu').css({width: "250px"}).stop().animate({width: "0px"}, 200, function(){
-                $('.menu').css({display: "none"});
-            });
-            open = false;
-        }else{
-            $('.menu').css({display: "block", width: "0px"}).stop().animate({width: "250px"});
-            open = true;
-        }
     });
 }
 
 
+var main = function(){
+    headsizer();
+    Q_bullet();
+}
+
+
+var headsizer = function(){
+    splashheight = $(window).height() - ($('header').height() + $('nav').height());
+    $('.introduction').css({paddingTop: (splashheight / 2) - $('nav').height()});
+    $('.splash').css({height: splashheight});
+}
+
+$(window).resize(headsizer);
 
 $(document).ready(main);
